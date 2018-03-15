@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidur.bankapp.com.example.vidur.bank.TellerCustomerLogin"
+    tools:layout_editor_absoluteY="16dp"
+    tools:layout_editor_absoluteX="16dp"
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/CUSTOMER"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="89dp"
+            app:srcCompat="@drawable/goochilog"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="115dp" />
+
+        <EditText
+            android:id="@+id/CustomerTeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp"
+            android:ems="10"
+            android:hint="USERID"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/CustomerTellerPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/CustomerTeller"
+            android:layout_below="@+id/CustomerTeller"
+
+            android:layout_marginTop="38dp"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/CustomerTellerSubmit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:background="#53BFD8"
+            android:text="Submit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#f1f1f1"
+            android:textSize="18sp"
+            android:layout_below="@+id/CustomerTellerPassword"
+            android:layout_alignEnd="@+id/CustomerTellerPassword"
+            android:layout_alignStart="@+id/CustomerTellerPassword" />
+
+        <TextView
+            android:id="@+id/CustomerText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="CUSTOMER LOGIN "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/CustomerTeller"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="93dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/CustomerText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="FOR TELLER"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Exit"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/reddish"
+            android:text="EXIT"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/CustomerTellerSubmit"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

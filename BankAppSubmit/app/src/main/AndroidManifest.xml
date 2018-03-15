@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.vidur.bankapp">
+
+  <!-- To auto-complete the email text field in the login form with the user's emails -->
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.READ_PROFILE"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+  <application
+      android:allowBackup="true"
+      android:icon="@drawable/goochilog"
+      android:label="@string/app_name"
+      android:roundIcon="@drawable/goochilog"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity
+        android:name="com.bank.SplashActivity"
+        android:theme="@style/SplashTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.bank.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.bank.SecondActivity"/>
+    <activity android:name="com.bank.TELLERmain"/>
+    <activity android:name="com.bank.TellerLogin"/>
+    <activity android:name="com.bank.Admin"/>
+    <activity android:name="com.bank.Customerlogin"/>
+    <activity android:name="com.bank.TellerCustomerLogin"/>
+    <activity android:name="com.bank.TellerOptions"/>
+    <activity android:name="com.bank.customermain2"/>
+    <activity android:name="com.bank.NewAdmin"/>
+    <activity android:name="com.bank.NewTeller"/>
+    <activity android:name="com.bank.CurrentAdmins"/>
+    4
+    <activity android:name="com.bank.CurrentTellers"/>
+    <activity android:name="com.bank.CurrentCustomers"/>
+    <activity android:name="com.bank.TotalBalanceAdmin"/>
+    <activity android:name="com.bank.PromoteTeller"/>
+    <activity android:name="com.bank.DatabaseOptions"/>
+    <activity android:name="com.bank.MessageOptions"/>
+    <activity android:name="com.bank.MakeDeposit"/>
+    <activity android:name="com.bank.MakeWithdrawl"/>
+    <activity android:name="com.bank.CheckBalance"/>
+    <activity android:name="com.bank.TotalofAllaccountsUser"/>
+    <activity android:name="com.bank.MessageOptionsTeller"/>
+    <activity android:name="com.bank.ListAccountAndBalances"/>
+    <activity android:name="com.bank.MakeDepositCustomer"/>
+    <activity android:name="com.bank.CheckBalanceCustomer"/>
+    <activity android:name="com.bank.MakeWithdrawlCustomer"/>
+    <activity android:name="com.bank.ViewAllMessage"/>
+    <activity
+        android:name=".NewUser"
+        android:label="@string/title_activity_new_user"
+        android:theme="@style/AppTheme"/>
+    <activity android:name="com.bank.NewUserTeller"/>
+    <activity android:name="com.bank.LeaveMessageAdmin"/>
+    <activity android:name="com.bank.ViewAllMessageLogin"/>
+    <activity android:name="com.bank.AccountTypesOptions"/>
+    <activity android:name="com.bank.TransferOptions"/>
+    <activity android:name="com.bank.NewAccountTeller"/>
+    <activity android:name="com.bank.Interest"/>
+    <activity android:name="com.bank.AccountTransfer"/>
+    <activity android:name="com.bank.UserTransfer"/>
+    <activity android:name="com.bank.BalanceOfAccountsAdmin"/>
+    <activity android:name="com.bank.ViewAllMessagesCustomer"/>
+    <activity android:name="com.bank.ViewAllTellerMessages"/>
+    <activity android:name="com.bank.ViewCustomerMessagesTeller"/>
+    <activity android:name="com.bank.LeaveMessagesTeller"/>
+    <activity android:name="com.bank.ViewAllMessagesCustomer$ViewTellerMessages"/>
+    <activity android:name="com.bank.ReceiveTransfer">
+    </activity>
+  </application>
+
+</manifest>

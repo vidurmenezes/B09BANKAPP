@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bank.TellerOptions"
+
+
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:theme="@android:style/Theme.NoTitleBar">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/goochilog"
+                tools:layout_editor_absoluteX="106dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginTop="34dp"
+                android:layout_weight="10"
+                android:text="TELLER OPTIONS"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="70px"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/transfers"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="TRANSFERS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_below="@+id/textView4" android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"/>
+            <Button
+                android:id="@+id/newAccountTeller"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="NEW ACCOUNT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/transfers" android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/giveInterest"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:text="GIVE INTEREST"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_below="@+id/newAccountTeller" android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/makeDeposit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/giveInterest"
+                android:layout_marginTop="28dp"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:text="MAKE DEPOSIT"
+                android:textAlignment="center"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/closeCustomer"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:text="CLOSE CUSTOMER SESSION"
+                android:textAlignment="center"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_below="@+id/checkBalance"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/checkBalance"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/withdrawlTeller"
+                android:layout_marginTop="25dp"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:text="CHECK BALANCE"
+                android:textAlignment="center"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/withdrawlTeller"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/makeDeposit"
+                android:layout_marginTop="24dp"
+                android:background="#53BFD8"
+                android:fontFamily="sans-serif"
+                android:text="MAKE WITHDRAWL"
+                android:textAlignment="center"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/totalbalance"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/closeCustomer"
+                android:layout_marginTop="29dp"
+                android:background="#53BFD8"
+                android:text="TOTAL BALANCE FOR USER"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/tellerMessages"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:text="MESSAGES"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/totalbalance"
+                android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="@color/reddish"
+                android:text="EXIT"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_below="@+id/tellerMessages"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidur.bankapp.com.example.vidur.bank.customermain2"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/goochilog"/>
+
+            <TextView
+                android:id="@+id/TellerText"
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="48dp"
+                android:layout_weight="10"
+                android:text="CUSTOMER OPTIONS"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="70px"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/listAccountsBalances"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="#53BFD8"
+                android:text="List accounts and balances"
+                android:textAllCaps="true"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_below="@+id/TellerText" android:layout_alignParentEnd="true"/>
+
+            <Button
+                android:id="@+id/makeDeposit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:background="#53BFD8"
+                android:text="Make deposit"
+                android:textAllCaps="true"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_below="@+id/listAccountsBalances"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/checkBalance"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:text="Check balance"
+                android:textAllCaps="true"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/makeWithdrawlCustomer"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/Messages"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:text="VIEW ALL MESSAGES"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_alignTop="@+id/checkBalance" android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"/>
+
+            <Button
+                android:id="@+id/transferFromCustomer"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:text="TRANSFER OPTIONS"
+                android:textAllCaps="true"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_marginBottom="39dp" android:layout_above="@+id/exit"
+                android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/makeWithdrawlCustomer"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#53BFD8"
+                android:text="Make withdrawal"
+                android:textAllCaps="true"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/makeDeposit" android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/reddish"
+                android:text="Exit"
+                android:textColor="#f1f1f1"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#353E4F</color>
+    <color name="secondPage">#00695C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="reddish">#e75748</color>
+    <color name="greenish">#ffffff</color>
+    <color name="blueishback">#3F51B5</color>
+
+</resources>
